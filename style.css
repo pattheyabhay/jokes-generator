@@ -1,0 +1,119 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Choose your preferred font family */
+    background-color: powderblue;
+    /* Set the background color */
+    color: #333;
+    /* Set the default text color */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    line-height: 1.6;
+    /* Adjust line height for better readability */
+    text-align: left;
+    /* Set text alignment to left */
+    background: url(wall.jpg)no-repeat;
+}
+
+.page-title {
+    margin-left: 32vw;
+    margin-left: 41vw;
+    font-size: 1.5rem;
+    font-size: 24px;
+    color: #ff0505;
+    margin-bottom: 20px;
+    animation: bounce 2s infinite;
+    /* Apply the animation */
+}
+
+/* Define the bounce animation */
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.panel {
+    background-color: #f3f3f3;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+
+.container {
+    background-color: transparent;
+    background-color: #f3f3f3;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+
+    /* Adjust styles for smaller screens */
+    .container {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
